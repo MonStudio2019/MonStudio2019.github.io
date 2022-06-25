@@ -1,0 +1,18 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "Q5QV42943X.com.moneysmarts.firegame" ],
+             "components": [
+               {
+                  "/": "/flaid.html",
+                  "comment": "Matches any URL whose path starts with /flaid.html"
+               }
+             ]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "Q5QV42943X.com.moneysmarts.firegame" ]
+   }
+}
