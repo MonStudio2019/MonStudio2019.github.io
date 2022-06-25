@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Money Smarts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body onload="openApp()">
+
+<center>
+	<br><br><br><br>
+	<h3 id = "open">Opening Money Smarts App...</h3>
+	<br><br>
+
+</center>
+</body>
+</html>
+
+<script>
+    function openApp() {
+		var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+		var captured = /key=([^&]+)/.exec(location)[1];
+	    var key = captured ? captured : '';
+
+		if (iOS) {
+       		window.location.href = "moneysmarts://" + key;
+		}
+		else {
+			window.location.href = domain;
+		}
+        
+    }
+</script>
+
+<style>
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.content {
+	background: #EEEEEE;
+	margin: 0 auto;
+	width: 55%;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	border-radius: 10px;
+}
+
+.content section {
+	color: #636363;
+	line-height: 30px;
+}
+
+</style>
